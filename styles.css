@@ -120,7 +120,7 @@ input:focus {
 	background: #e0a800;
 }
 
-/* ======= Tables ======= */
+/* Table */
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -148,7 +148,7 @@ tr:hover {
 	background: #eef6ff;
 }
 
-/* ======= Detail Table ======= */
+/* Detail Table */
 .detail-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -171,13 +171,14 @@ tr:hover {
 	font-weight: bold;
 }
 
+/* Styling form secara umum */
 form {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 }
 
-/* Form Search */
+/* Form Search*/
 form[action=""] {
 	display: flex;
 	flex-direction: row;
@@ -190,6 +191,7 @@ form[action=""] input[type="text"] {
 	flex: 1;
 }
 
+/* Container khusus untuk form tambah.php */
 .form-container {
 	width: 90%;
 	max-width: 500px;
@@ -198,4 +200,25 @@ form[action=""] input[type="text"] {
 	padding: 25px;
 	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* Input field di tambah.php */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+/* Label di tambah.php */
+.form-container label {
+	font-weight: bold;
+	margin-bottom: 5px;
 }

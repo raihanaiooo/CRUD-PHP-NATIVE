@@ -23,7 +23,7 @@ exit;
     <h1 class="title">Tambah Mahasiswa</h1>
 
     <div class="form-container">
-        <form method="post">
+        <form method="post" action="tambah.php">
             <label>NIM:</label>
             <input type="text" name="nim" class="input-text" required><br>
 
