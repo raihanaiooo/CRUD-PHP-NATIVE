@@ -49,7 +49,7 @@ include "config.php";
                     <td><?= $row['nama']; ?></td>
                     <td><?= $row['umur']; ?></td>
                     <td>
-                        <a href="/PHP/editphp/<?= $row['id']; ?>" class="button button-edit">Edit</a>
+                        <a href="/PHP/edit.php?id=<?= $row['id']; ?>" class="button button-edit">Edit</a>
                         <a href="/PHP/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin mau hapus?')">Hapus</a>
 
                     </td>

@@ -1,6 +1,7 @@
 <?php
 include "config.php";
 $id = $_GET['id'];
+$id = (int) $_GET['id'];
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa WHERE id=$id");
 $data = mysqli_fetch_assoc($result);
 
@@ -10,7 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $umur = $_POST['umur'];
 
     mysqli_query($conn, "UPDATE mahasiswa SET nim='$nim', nama='$nama', umur='$umur' WHERE id=$id");
-    header("Location: index.php");
+    header("Location: /PHP/tabel_mhs.php");
+exit;
+
 }
 ?>
 
@@ -36,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         <div style="margin-top: 15px;">
             <button type="submit" class="button button-create">Update</button>
-            <a href="index.php" class="button button-batal">Batal</a>
+            <a href="/PHP/tabel_mhs.php" class="button button-batal">Batal</a>
         </div>
     </form>
 </div>

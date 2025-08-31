@@ -7,8 +7,9 @@ if (isset($_GET['id'])) {
     $query = "DELETE FROM mahasiswa WHERE id = $id";
     mysqli_query($conn, $query);
 
-    header("Location: index.php");
+    header("Location: /PHP/tabel_mhs.php");
     exit;
+
 } else {
     echo "ID tidak ditemukan!";
 }

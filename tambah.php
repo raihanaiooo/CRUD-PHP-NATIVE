@@ -7,7 +7,9 @@
         $umur = $_POST['umur'];
 
         mysqli_query($conn, "INSERT INTO mahasiswa (nim, nama, umur) VALUES ('$nim', '$nama', '$umur')");
-        header("Location: index.php");
+        header("Location: /PHP/tabel_mhs.php");
+exit;
+
     }
     ?>
 
