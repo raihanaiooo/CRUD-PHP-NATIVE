@@ -1,0 +1,201 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f4f6f9;
+	color: #333;
+}
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 30px auto;
+	background: #fff;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+.title {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #444;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.input-text,
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	width: 100%;
+	font-size: 14px;
+}
+
+input:focus {
+	border-color: #4a90e2;
+	outline: none;
+	box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+/* Button */
+.button,
+.btn,
+.button-create,
+.button-edit,
+.button-batal,
+.button-detail,
+.button-search,
+.button-back {
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 6px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s ease;
+	border: none;
+	line-height: 1.2;
+}
+
+/* Primary (Tambah, Simpan, Update) */
+.button-create,
+.btn {
+	margin-top: 2%;
+	background: #4a90e2;
+	color: #fff;
+}
+.button-create:hover,
+.btn:hover {
+	background: #357abd;
+}
+
+/* Edit (Hijau) */
+.button-edit {
+	background: #28a745;
+	color: #fff;
+}
+.button-edit:hover {
+	background: #218838;
+}
+
+/* Destructive (Batal/Hapus Merah) */
+.button-batal {
+	background: #dc3545;
+	color: #fff;
+	text-align: center;
+}
+.button-batal:hover {
+	background: #b52a37;
+}
+
+/* Detail (Cyan) */
+.button-detail {
+	background: #17a2b8;
+	color: #fff;
+}
+.button-detail:hover {
+	background: #11707f;
+}
+
+/* Serarch */
+.button-search {
+	background: #ffc107;
+	color: #fff;
+}
+
+.button-search:hover {
+	background: #e0a800;
+}
+
+/* ======= Tables ======= */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background: #4a90e2;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background: #f9f9f9;
+}
+
+tr:hover {
+	background: #eef6ff;
+}
+
+/* ======= Detail Table ======= */
+.detail-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 15px;
+	background: #fff;
+}
+
+.detail-table th,
+.detail-table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: left;
+	font-size: 14px;
+}
+
+.detail-table th {
+	width: 180px;
+	background: #f4f6f9;
+	color: #333;
+	font-weight: bold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+/* Form Search */
+form[action=""] {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+form[action=""] input[type="text"] {
+	flex: 1;
+}
+
+.form-container {
+	width: 90%;
+	max-width: 500px;
+	margin: 20px auto;
+	background: #fff;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

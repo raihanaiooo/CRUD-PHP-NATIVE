@@ -15,7 +15,7 @@ include "config.php";
     <!-- Form Search -->
     <form method="get" action="">
         <input type="text" name="keyword" placeholder="Cari NIM/Nama">
-        <button type="submit" class="button button-create">Cari</button>
+        <button type="submit" class="button button-search">Cari</button>
     </form>
 
     <a href="/PHP/tambah.php" class="button button-create">+ Tambah Mahasiswa</a>
@@ -49,8 +49,9 @@ include "config.php";
                     <td><?= $row['nama']; ?></td>
                     <td><?= $row['umur']; ?></td>
                     <td>
+                        <a href="/PHP/detail.php?id=<?= $row['id']; ?>" class="button button-detail">Detail</a>
                         <a href="/PHP/edit.php?id=<?= $row['id']; ?>" class="button button-edit">Edit</a>
-                        <a href="/PHP/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin mau hapus?')">Hapus</a>
+                        <a href="/PHP/hapus.php?id=<?= $row['id']; ?>"class="button button-batal" onclick="return confirm('Yakin mau hapus?')">Hapus</a>
 
                     </td>
                 </tr>

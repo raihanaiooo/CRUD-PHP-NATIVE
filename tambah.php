@@ -34,7 +34,7 @@ exit;
             <input type="number" name="umur" class="input-text" required><br>
 
         <button type="submit" class="btn">Simpan</button>
-        <a href="/PHP/tabel_mhs.php" class="btn-cancel">Batal</a>
+        <a href="/PHP/tabel_mhs.php" class="button-batal">Batal</a>
 
         </form>
     </div>
