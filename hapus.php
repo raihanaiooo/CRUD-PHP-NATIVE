@@ -1,7 +1,15 @@
 <?php
 include "config.php";
-$id = $_GET['id'];
 
-mysqli_query($conn, "DELETE FROM mahasiswa WHERE id=$id");
-header("Location: index.php");
+if (isset($_GET['id'])) {
+    $id = (int) $_GET['id'];
+
+    $query = "DELETE FROM mahasiswa WHERE id = $id";
+    mysqli_query($conn, $query);
+
+    header("Location: index.php");
+    exit;
+} else {
+    echo "ID tidak ditemukan!";
+}
 ?>

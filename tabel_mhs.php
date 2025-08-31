@@ -50,7 +50,8 @@ include "config.php";
                     <td><?= $row['umur']; ?></td>
                     <td>
                         <a href="/PHP/editphp/<?= $row['id']; ?>" class="button button-edit">Edit</a>
-                        <a href="/PHP/hapus.php/<?= $row['id']; ?>" class="button button-hapus" onclick="return confirm('Hapus data?');">Hapus</a>
+                        <a href="/PHP/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin mau hapus?')">Hapus</a>
+
                     </td>
                 </tr>
                 <?php
